@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroPod — Your Music. Your Device. Your Era.</title>
+    <meta
+      name="description"
+      content="RetroPod is a local music player app inspired by the iPod Classic. Navigate your music library with a virtual Click Wheel, Cover Flow, and iconic iPod interface — no streaming required."
+    />
+    <meta
+      property="og:title"
+      content="RetroPod — Your Music. Your Device. Your Era."
+    />
+    <meta
+      property="og:description"
+      content="A local music player designed to capture the nostalgic essence of the iconic iPod Classic."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/RchrdAriza/RetroPod/master/assets/images/hero_readme.png"
+    />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="icon" type="image/png" href="assets/images/app_icon.webp" />
+    <link rel="shortcut icon" type="image/webp" href="assets/images/app_icon.webp" />
+    <link rel="apple-touch-icon" href="assets/images/app_icon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="main-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="RetroPod home">
+          <img
+            src="assets/images/app_icon.webp"
+            alt=""
+            class="nav-logo-icon nav-logo-img"
+            width="20"
+            height="20"
+          />
+          <span class="nav-logo-text">RETROPOD</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#what-is">About</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+        <a
+          href="https://github.com/RchrdAriza/RetroPod"
+          class="nav-github"
+          target="_blank"
+          rel="noopener"
+          id="nav-github-btn"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+          GitHub
+        </a>
+        <button
+          class="nav-hamburger"
+          id="nav-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-headline">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="hero-headline" class="hero-headline">
+            Your Music.<br />Your Device.<br /><span class="hero-accent"
+              >Your Era.</span
+            >
+          </h1>
+          <p class="hero-sub">
+            A local music player inspired by the iPod Classic — navigate your
+            library with a virtual Click Wheel, Cover Flow, and iconic
+            interface. No streaming. No algorithms. Just your music.
+          </p>
+          <div class="hero-ctas">
+            <a href="#download" class="btn-primary" id="hero-download-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+              Download Free
+            </a>
+            <a
+              href="https://github.com/RchrdAriza/RetroPod"
+              class="btn-ghost"
+              id="hero-github-btn"
+              target="_blank"
+              rel="noopener"
+              >View Source</a
+            >
+          </div>
+          <div class="hero-specs" aria-label="Supported platforms">
+            <span class="spec-tag">Android</span>
+            <span class="spec-tag">iOS</span>
+            <span class="spec-tag">Linux</span>
+            <span class="spec-tag">macOS</span>
+            <span class="spec-tag">Windows</span>
+            <span class="spec-tag">Web</span>
+          </div>
+        </div>
+
+        <div class="hero-device-wrap" aria-label="RetroPod app preview">
+          <img
+            src="https://raw.githubusercontent.com/RchrdAriza/RetroPod/master/assets/images/hero_readme.png"
+            alt="RetroPod app screenshots showing Now Playing, Menu, Minigames, and Photos screens"
+            class="hero-device-img"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="float-badge float-badge-1" aria-hidden="true">MP3</div>
+          <div class="float-badge float-badge-2" aria-hidden="true">FLAC</div>
+          <div class="float-star float-star-1" aria-hidden="true">&#10022;</div>
+          <div class="float-star float-star-2" aria-hidden="true">&#10023;</div>
+          <div class="float-label float-label-1" aria-hidden="true">
+            v1.12.0
+          </div>
+          <div class="float-label float-label-2" aria-hidden="true">
+            197 LANGUAGES
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>LOCAL MUSIC LIBRARY</span
+          ><span class="marquee-dot">&#9670;</span> <span>CLICK WHEEL</span
+          ><span class="marquee-dot">&#9670;</span> <span>COVER FLOW</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>BACKGROUND PLAYBACK</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>INTERCHANGEABLE SKINS</span
+          ><span class="marquee-dot">&#9670;</span> <span>MINIGAMES</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>MP3 &middot; FLAC &middot; WAV &middot; AAC &middot; OGG</span
+          ><span class="marquee-dot">&#9670;</span> <span>OFFLINE FIRST</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>LOCAL MUSIC LIBRARY</span
+          ><span class="marquee-dot">&#9670;</span> <span>CLICK WHEEL</span
+          ><span class="marquee-dot">&#9670;</span> <span>COVER FLOW</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>BACKGROUND PLAYBACK</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>INTERCHANGEABLE SKINS</span
+          ><span class="marquee-dot">&#9670;</span> <span>MINIGAMES</span
+          ><span class="marquee-dot">&#9670;</span>
+          <span>MP3 &middot; FLAC &middot; WAV &middot; AAC &middot; OGG</span
+          ><span class="marquee-dot">&#9670;</span> <span>OFFLINE FIRST</span
+          ><span class="marquee-dot">&#9670;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS RETROPOD -->
+    <section id="what-is" aria-labelledby="what-is-headline">
+      <div class="section-inner">
+        <div class="what-is-grid">
+          <div class="what-is-text">
+            <div class="section-label">WHAT IS RETROPOD?</div>
+            <h2 id="what-is-headline" class="section-headline">
+              The iPod experience,<br />on your device.
+            </h2>
+            <p class="section-body">
+              RetroPod is a local music player built with Flutter, designed to
+              bring back the iconic iPod Classic experience. Navigate your
+              personal music library through a faithful virtual interface —
+              Click Wheel, Cover Flow, Now Playing screen and all — without
+              depending on a single streaming service.
+            </p>
+            <p class="section-body">
+              Your collection. Your playlists. Your hardware. The way it was
+              meant to be.
+            </p>
+            <div class="what-is-specs">
+              <div class="spec-block">
+                <div class="spec-num">197+</div>
+                <div class="spec-desc">Languages supported</div>
+              </div>
+              <div class="spec-block">
+                <div class="spec-num">11</div>
+                <div class="spec-desc">Audio formats</div>
+              </div>
+              <div class="spec-block">
+                <div class="spec-num">6</div>
+                <div class="spec-desc">Platforms</div>
+              </div>
+            </div>
+          </div>
+          <div class="what-is-visual">
+            <div class="device-card">
+              <div class="device-tag-top" aria-hidden="true">
+                MODEL RETROPOD-1.12 // DIGITAL AUDIO PLAYER
+              </div>
+              <div class="pixel8-frame" aria-label="Interactive RetroPod web app">
+                <div class="pixel8-camera" aria-hidden="true"></div>
+                <div class="pixel8-screen">
+                  <iframe
+                    src="https://rchrdariza.github.io/RetroPod/#/menu"
+                    class="pixel8-iframe"
+                    title="RetroPod interactive demo"
+                    loading="lazy"
+                    allow="autoplay; clipboard-write"
+                  ></iframe>
+                </div>
+                <div class="pixel8-statusbar" aria-hidden="true">
+                  <span>9:41</span>
+                  <span class="pixel8-icons"> LTE &#9670; &#9670; &#9670; &#9670; &#9670;</span>
+                </div>
+              </div>
+              <div class="device-tag-bottom" aria-hidden="true">
+                DESIGNED FOR LOCAL MUSIC // OFFLINE FIRST
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DOWNLOAD -->
+    <section id="download" aria-labelledby="download-headline">
+      <div class="section-inner">
+        <div class="section-label">GET RETROPOD</div>
+        <h2 id="download-headline" class="section-headline download-title">
+          Download now.<br /><span class="hero-accent">It's free.</span>
+        </h2>
+        <p class="section-body download-sub">
+          Available across all major platforms. Open source, no accounts, no
+          subscriptions.
+        </p>
+        <div class="download-grid">
+          <a
+            href="https://github.com/RchrdAriza/RetroPod/releases/tag/1.12.0"
+            class="download-card"
+            target="_blank"
+            rel="noopener"
+            id="dl-android"
+          >
+            <div class="dl-icon dl-android-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M17.523 15.341l1.854-3.21A.48.48 0 0019.22 11.5H4.78a.48.48 0 00-.157.631l1.853 3.21a.485.485 0 00.42.243h10.208a.48.48 0 00.42-.243zM1.513 8.017a.48.48 0 00-.164.658l2.44 4.226A.48.48 0 004.2 13.14V8.498a.48.48 0 00-.48-.481H2.01a.48.48 0 00-.497 0zm20.974 0a.48.48 0 00-.497 0h-1.71a.48.48 0 00-.48.481v4.642a.48.48 0 00.41.24l2.44-4.226a.48.48 0 00-.163-.658zM8.526 1.98l-1.05-1.818a.24.24 0 00-.414.24l1.06 1.835A6.9 6.9 0 0012 1.74c1.38 0 2.668.402 3.748 1.097l1.06-1.836a.24.24 0 00-.414-.24L15.34 2.58A6.88 6.88 0 0012 1.74a6.88 6.88 0 00-3.474.84zM9.6 5.28a.72.72 0 100-1.44.72.72 0 000 1.44zm4.8 0a.72.72 0 100-1.44.72.72 0 000 1.44z"
+                />
+              </svg>
+            </div>
+            <div class="dl-info">
+              <div class="dl-platform">Android</div>
+              <div class="dl-action">Download APK</div>
+            </div>
+            <div class="dl-arrow">&#8599;</div>
+          </a>
+          <a
+            href="https://github.com/RchrdAriza/RetroPod"
+            class="download-card"
+            target="_blank"
+            rel="noopener"
+            id="dl-source"
+          >
+            <div class="dl-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </div>
+            <div class="dl-info">
+              <div class="dl-platform">Source Code</div>
+              <div class="dl-action">GitHub Repository</div>
+            </div>
+            <div class="dl-arrow">&#8599;</div>
+          </a>
+          <a
+            href="https://github.com/RchrdAriza/RetroPod/releases"
+            class="download-card"
+            target="_blank"
+            rel="noopener"
+            id="dl-releases"
+          >
+            <div class="dl-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                width="32"
+                height="32"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </div>
+            <div class="dl-info">
+              <div class="dl-platform">All Releases</div>
+              <div class="dl-action">v1.12.0 Latest</div>
+            </div>
+            <div class="dl-arrow">&#8599;</div>
+          </a>
+        </div>
+        <div class="download-platforms">
+          <div class="dl-plat-label">Built with Flutter &mdash; runs on:</div>
+          <div class="dl-plat-tags">
+            <span class="dl-plat-tag">Android</span
+            ><span class="dl-plat-sep">&middot;</span>
+            <span class="dl-plat-tag">iOS</span
+            ><span class="dl-plat-sep">&middot;</span>
+            <span class="dl-plat-tag">Linux</span
+            ><span class="dl-plat-sep">&middot;</span>
+            <span class="dl-plat-tag">macOS</span
+            ><span class="dl-plat-sep">&middot;</span>
+            <span class="dl-plat-tag">Windows</span
+            ><span class="dl-plat-sep">&middot;</span>
+            <span class="dl-plat-tag">Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img
+                src="assets/images/app_icon.webp"
+                alt=""
+                class="footer-logo-icon footer-logo-img"
+                loading="lazy"
+                decoding="async"
+                width="20"
+                height="20"
+              />
+              <span class="footer-logo-text">RETROPOD</span>
+            </div>
+            <p class="footer-tagline">
+              Built for people who still own their music.
+            </p>
+            <div class="footer-spec-row" aria-hidden="true">
+              <span>RETROPOD // DIGITAL AUDIO PLAYER</span>
+              <span class="footer-sep">&#9672;</span>
+              <span>MODEL 1.12.0</span>
+              <span class="footer-sep">&#9672;</span>
+              <span>FLUTTER SDK</span>
+            </div>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <div class="footer-col-title">Project</div>
+              <ul class="footer-col-links" role="list">
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/releases"
+                    target="_blank"
+                    rel="noopener"
+                    >Releases</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/blob/master/CHANGELOG.md"
+                    target="_blank"
+                    rel="noopener"
+                    >Changelog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/blob/master/LICENSE"
+                    target="_blank"
+                    rel="noopener"
+                    >License</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-title">Legal</div>
+              <ul class="footer-col-links" role="list">
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/blob/master/privacy-policy.md"
+                    target="_blank"
+                    rel="noopener"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/blob/master/terms-and-conditions.md"
+                    target="_blank"
+                    rel="noopener"
+                    >Terms</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RchrdAriza/RetroPod/blob/master/CONTRIBUTING.md"
+                    target="_blank"
+                    rel="noopener"
+                    >Contributing</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            &copy; 2000&ndash;2026 RetroPod &mdash; ISC License
+          </div>
+          <div class="footer-best-viewed" aria-hidden="true">
+            Best viewed with good taste in music.
+          </div>
+          <div class="footer-serial" aria-hidden="true">
+            SN: RP-1.12.0-OSS-FLUTTER
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
