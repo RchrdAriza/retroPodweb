@@ -1569,6 +1569,18 @@ body::before {
 
   .what-is-specs { grid-template-columns: 1fr 1fr; }
 
+  .device-card {
+    width: min(100%, 420px);
+    margin: 0 auto;
+  }
+  .pixel8-frame {
+    width: min(82vw, 420px);
+    aspect-ratio: 9 / 18.2;
+    border-radius: 38px;
+    padding: 10px;
+  }
+  .pixel8-screen { border-radius: 28px; }
+
   .iface-device { width: 280px; }
   .wheel-ring { width: 130px; height: 130px; }
 
@@ -1579,8 +1591,29 @@ body::before {
   .hero-headline { font-size: 2rem; }
   .section-headline { font-size: 1.8rem; }
 
+  .what-is-grid { gap: 20px; }
   .what-is-specs { grid-template-columns: 1fr; }
 
-  .pixel8-frame { width: 280px; border-radius: 36px; }
-  .pixel8-screen { border-radius: 26px; }
+  .device-card {
+    width: min(100%, 360px);
+    margin: 0 auto;
+  }
+  .pixel8-frame {
+    width: min(90vw, 360px);
+    aspect-ratio: 9 / 17.8;
+    border-radius: 32px;
+    padding: 8px;
+  }
+  .pixel8-camera {
+    width: 8px;
+    height: 8px;
+    top: 12px;
+  }
+  .pixel8-statusbar {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    font-size: 8px;
+  }
+  .pixel8-screen { border-radius: 24px; }
 }
