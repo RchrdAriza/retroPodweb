@@ -240,6 +240,29 @@
   sections.forEach(s => observer.observe(s));
 })();
 
+/* ---- LATEST RELEASE ---- */
+(function () {
+  const dlAndroid = document.getElementById('dl-android');
+  const dlReleases = document.getElementById('dl-releases');
+  const label = document.getElementById('dl-latest-label');
+
+  if (!dlAndroid && !dlReleases) return;
+
+  fetch('https://api.github.com/repos/RchrdAriza/RetroPod/releases/latest')
+    .then(res => {
+      if (!res.ok) throw new Error('Bad response: ' + res.status);
+      return res.json();
+    })
+    .then(data => {
+      if (!data || !data.tag_name) return;
+      const releaseUrl = 'https://github.com/RchrdAriza/RetroPod/releases/tag/' + data.tag_name;
+      if (dlAndroid) dlAndroid.href = releaseUrl;
+      if (dlReleases) dlReleases.href = releaseUrl;
+      if (label) label.textContent = data.tag_name + ' Latest';
+    })
+    .catch(() => {});
+})();
+
 /* ---- SMOOTH ANCHOR SCROLL ---- */
 (function () {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
